@@ -1,0 +1,36 @@
+spacy
+flask
+bs4
+google_generativeai
+
+# api = 'AIzaSyAm5HDnero63r30sO3kLyyaYLrGzUDOA20'
+
+transformers 
+einops 
+accelerate 
+langchain 
+bitsandbytes
+
+requests
+langchain_google_genai
+chromadb
+
+streamlit
+
+huggingface
+# "huggingface_hub[cli]"
+
+# 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
+
+groq
+
+# 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
+
+langchain_groq
+
+
+llama-index
+sentence-transformers
+langchain_cohere
+
+faiss-cpu

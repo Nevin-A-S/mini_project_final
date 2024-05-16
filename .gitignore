@@ -1,0 +1,7 @@
+.venv\
+.new_env/
+
+.new_env\
+vectorstore
+.new_env
+__pycache__

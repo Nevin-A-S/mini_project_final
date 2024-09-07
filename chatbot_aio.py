@@ -18,9 +18,9 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 
 
-API_KEY = 'AIzaSyAhJFxbj1d0iaj_d4H4i1USleWhpqwZpoM'
+API_KEY = 'GEMINI API'
 
-groq_api_key = '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'
+groq_api_key = 'GROQ API'
 
 
 template = """Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know
@@ -65,9 +65,6 @@ class chatbot:
         
         return vector_index
     
-         
-        
-
 class chatbotLLama:
     
     def __init__(self, data, model = 'llama3-70b-8192'):
@@ -77,7 +74,7 @@ class chatbotLLama:
         self.model = ChatGroq(groq_api_key=groq_api_key, 
                               model_name=model, 
                               max_tokens=maxtoken)
-        cohere_api_key = "RQIdJ9Af7TdlJIp4AYsibup3KFT5jexTERMXJJFE"
+        cohere_api_key = "Cohere API Here"
         self.embeddings = CohereEmbeddings(model="embed-english-light-v3.0", cohere_api_key=cohere_api_key)
         self.vector_index = self.create_vector_db()
 
@@ -118,7 +115,6 @@ class chatbotLLama:
         qa_result = self.qa_bot()
         response = qa_result({'query': query})
         return response
-    
     
 class chatbotMix:
     

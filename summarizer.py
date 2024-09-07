@@ -4,12 +4,9 @@ from langchain.chains import ConversationChain
 from langchain_groq import ChatGroq
 
 
-groq_api_key = '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'
+groq_api_key = 'PASTE GROQ API HERE'
 
-genai.configure(api_key='AIzaSyAm5HDnero63r30sO3kLyyaYLrGzUDOA20')
-
-API_KEY = 'AIzaSyAm5HDnero63r30sO3kLyyaYLrGzUDOA20'
-
+genai.configure(api_key='PASTE GEMINI API HERE')
 
 def summarizer(text, model):
     model = model.lower()
